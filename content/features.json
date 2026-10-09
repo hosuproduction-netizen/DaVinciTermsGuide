@@ -1,0 +1,2198 @@
+{
+  "programs": [
+    {
+      "slug": "premiere",
+      "name": "Premiere Pro",
+      "description": "익숙한 트랙 편집에서 더 넓은 색보정으로.",
+      "kicker": "ADOBE WORKFLOW",
+      "color": "lilac"
+    },
+    {
+      "slug": "capcut",
+      "name": "CapCut",
+      "description": "숏폼 편집의 감각을 그대로, 더 세밀하게.",
+      "kicker": "SHORT-FORM WORKFLOW",
+      "color": "lemon"
+    },
+    {
+      "slug": "final-cut-pro",
+      "name": "Final Cut Pro",
+      "description": "마그네틱 타임라인에서 새로운 편집 흐름으로.",
+      "kicker": "MAC WORKFLOW",
+      "color": "mint"
+    },
+    {
+      "slug": "vllo",
+      "name": "VLLO",
+      "description": "손안의 편집에서 데스크톱 편집으로.",
+      "kicker": "MOBILE WORKFLOW",
+      "color": "taupe"
+    }
+  ],
+  "features": [
+    {
+      "slug": "media-pool",
+      "title": "미디어 파일 관리",
+      "resolve": "Media Pool",
+      "category": "기본 편집",
+      "location": "Edit → Media Pool",
+      "summary": "영상·사진·오디오를 프로젝트 안에서 정리하고 타임라인에 배치합니다.",
+      "steps": [
+        "Edit 페이지를 엽니다.",
+        "미디어 풀에 파일을 가져옵니다.",
+        "필요하면 Bin을 만들어 분류한 뒤 타임라인에 끌어 놓습니다."
+      ],
+      "tip": "미디어 풀에 등록된 파일과 실제 원본 파일의 저장 위치는 별개입니다.",
+      "edition": "무료",
+      "keywords": [
+        "미디어 가져오기",
+        "폴더",
+        "bin",
+        "파일 불러오기"
+      ],
+      "related": [
+        "timeline",
+        "project-structure"
+      ],
+      "source": "https://www.blackmagicdesign.com/kr/products/davinciresolve/edit",
+      "maps": {
+        "premiere": {
+          "name": "Project 패널",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "미디어",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Browser / Event",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "미디어 선택",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "project-structure",
+      "title": "프로젝트와 타임라인 구조",
+      "resolve": "Project / Timeline",
+      "category": "기본 편집",
+      "location": "Project Manager → Project → Timeline",
+      "summary": "다빈치에서는 프로젝트 안에 여러 타임라인을 만들 수 있습니다.",
+      "steps": [
+        "Project Manager에서 프로젝트를 만듭니다.",
+        "Media Pool에서 새 타임라인을 만듭니다.",
+        "한 프로젝트 안에 여러 타임라인을 정리해 봅니다."
+      ],
+      "tip": "Final Cut Pro의 Project는 다빈치의 Project보다 Timeline에 가깝습니다.",
+      "edition": "무료",
+      "keywords": [
+        "프로젝트",
+        "시퀀스",
+        "이벤트",
+        "라이브러리",
+        "sequence",
+        "library"
+      ],
+      "related": [
+        "timeline",
+        "media-pool"
+      ],
+      "source": "https://support.apple.com/guide/final-cut-pro/libraries-sidebar-ver91709d39/mac",
+      "maps": {
+        "premiere": {
+          "name": "Project / Sequence",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "프로젝트",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Project / Library",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "프로젝트",
+          "status": "차이 있음",
+          "note": "Final Cut Pro의 Library·Event·Project 구조는 다빈치의 Project·Bin·Timeline과 1:1로 일치하지 않습니다."
+        }
+      }
+    },
+    {
+      "slug": "timeline",
+      "title": "타임라인",
+      "resolve": "Timeline",
+      "category": "기본 편집",
+      "location": "Edit → Timeline",
+      "summary": "영상과 오디오 클립을 시간 순서대로 배열하는 편집 공간입니다.",
+      "steps": [
+        "Edit 페이지를 엽니다.",
+        "Media Pool에서 타임라인을 생성합니다.",
+        "클립을 배치해 편집합니다."
+      ],
+      "tip": "Final Cut Pro의 마그네틱 타임라인과 일반 트랙 기반 Edit 타임라인은 동작 방식이 다릅니다.",
+      "edition": "무료",
+      "keywords": [
+        "시퀀스",
+        "타임라인",
+        "sequence",
+        "timeline",
+        "편집 공간"
+      ],
+      "related": [
+        "project-structure",
+        "blade"
+      ],
+      "source": "https://www.blackmagicdesign.com/kr/products/davinciresolve/edit",
+      "maps": {
+        "premiere": {
+          "name": "Sequence",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "타임라인",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Project / Timeline",
+          "status": "차이 있음",
+          "note": "파이널 컷의 Project는 편집 시퀀스에 해당하며, 마그네틱 편집 동작이 다릅니다."
+        },
+        "vllo": {
+          "name": "편집 화면",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "blade",
+      "title": "영상 분할",
+      "resolve": "Blade / Split Clip",
+      "category": "기본 편집",
+      "location": "Edit → Blade Edit Mode",
+      "summary": "클립을 원하는 지점에서 두 조각으로 분할합니다.",
+      "steps": [
+        "타임라인에 클립을 배치합니다.",
+        "분할할 시점으로 재생헤드를 이동합니다.",
+        "Blade 도구 또는 Split Clip 명령을 사용합니다."
+      ],
+      "tip": "클립의 원본 영상 파일 자체가 잘리는 것은 아닙니다.",
+      "edition": "무료",
+      "keywords": [
+        "자르기",
+        "컷",
+        "split",
+        "razor",
+        "칼",
+        "블레이드",
+        "쪼개기"
+      ],
+      "related": [
+        "trim",
+        "ripple-delete"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Razor Tool",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "분할",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Blade",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "분할",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "trim",
+      "title": "영상 앞뒤 길이 조절",
+      "resolve": "Trim",
+      "category": "기본 편집",
+      "location": "Edit → 클립의 시작·끝 핸들",
+      "summary": "클립 앞뒤의 사용 구간을 늘리거나 줄입니다.",
+      "steps": [
+        "Edit 페이지에서 클립을 선택합니다.",
+        "클립 가장자리에 커서를 놓습니다.",
+        "좌우로 드래그하여 길이를 조정합니다."
+      ],
+      "tip": "Trim은 클립을 분할하는 Blade와 다릅니다.",
+      "edition": "무료",
+      "keywords": [
+        "트림",
+        "자르기",
+        "늘리기",
+        "영상 길이"
+      ],
+      "related": [
+        "blade",
+        "ripple-delete"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Trim",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "자르기/길이 조절",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Trim",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "길이 조절",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "ripple-delete",
+      "title": "빈 공간 없이 삭제",
+      "resolve": "Ripple Delete",
+      "category": "기본 편집",
+      "location": "Edit → 클립 선택 → Ripple Delete",
+      "summary": "클립을 지우면서 뒤쪽 클립을 당겨 빈 공간을 없앱니다.",
+      "steps": [
+        "타임라인에서 지울 클립을 선택합니다.",
+        "Ripple Delete 명령을 사용합니다.",
+        "주변 트랙과 삭제 범위가 맞는지 확인합니다."
+      ],
+      "tip": "일반 Delete는 타임라인에 빈 구간을 남길 수 있습니다.",
+      "edition": "무료",
+      "keywords": [
+        "빈 공간",
+        "간격 제거",
+        "리플",
+        "삭제",
+        "붙이기"
+      ],
+      "related": [
+        "blade",
+        "trim"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Ripple Delete",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "삭제 / 간격 제거",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Ripple Delete",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "삭제",
+          "status": "차이 있음",
+          "note": "모바일 편집 앱의 자동 간격 처리와 다빈치 Edit 페이지의 리플 삭제는 동작이 다릅니다."
+        }
+      }
+    },
+    {
+      "slug": "transitions",
+      "title": "영상 전환 효과",
+      "resolve": "Video Transitions",
+      "category": "영상 효과",
+      "location": "Edit → Effects → Video Transitions",
+      "summary": "두 영상 사이에 디졸브 등 전환 효과를 추가합니다.",
+      "steps": [
+        "Effects 패널에서 Video Transitions를 엽니다.",
+        "원하는 전환 효과를 클립 경계에 끌어 놓습니다.",
+        "길이를 조절하고 필요하면 Inspector에서 변경합니다."
+      ],
+      "tip": "전환하려는 클립에 사용 가능한 여유 프레임이 없으면 적용이 제한될 수 있습니다.",
+      "edition": "무료",
+      "keywords": [
+        "트랜지션",
+        "디졸브",
+        "전환",
+        "transition"
+      ],
+      "related": [
+        "blade",
+        "freeze-frame"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Video Transitions",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "전환 효과",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Transitions",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "전환 효과",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "inspector",
+      "title": "클립 속성 조절",
+      "resolve": "Inspector",
+      "category": "기본 편집",
+      "location": "Edit → Inspector",
+      "summary": "선택한 클립의 위치·크기·회전·효과 설정을 조정합니다.",
+      "steps": [
+        "타임라인에서 클립을 선택합니다.",
+        "오른쪽 상단 Inspector를 엽니다.",
+        "Video / Audio 설정을 조정합니다."
+      ],
+      "tip": "프리미어의 Effect Controls와 역할이 비슷하지만 모든 도구가 같은 자리에 있지는 않습니다.",
+      "edition": "무료",
+      "keywords": [
+        "이펙트 컨트롤",
+        "조절",
+        "속성",
+        "transform",
+        "효과 제어"
+      ],
+      "related": [
+        "zoom",
+        "position"
+      ],
+      "source": "https://helpx.adobe.com/premiere/desktop/add-video-effects/apply-video-effects/view-effects-in-the-effect-controls-panel.html",
+      "maps": {
+        "premiere": {
+          "name": "Effect Controls",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "기본 / 동영상 속성",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Video Inspector",
+          "status": "유사",
+          "note": ""
+        },
+        "vllo": {
+          "name": "편집 메뉴",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "zoom",
+      "title": "화면 확대·축소",
+      "resolve": "Zoom",
+      "category": "영상 효과",
+      "location": "Edit → Inspector → Video → Transform → Zoom",
+      "summary": "클립 화면의 크기를 키우거나 줄입니다.",
+      "steps": [
+        "클립을 선택하고 Inspector를 엽니다.",
+        "Video → Transform에서 Zoom 값을 조정합니다.",
+        "움직임이 필요하면 다이아몬드 아이콘으로 키프레임을 추가합니다."
+      ],
+      "tip": "다빈치의 Zoom은 프리미어·캡컷의 Scale과 비슷한 역할입니다.",
+      "edition": "무료",
+      "keywords": [
+        "확대",
+        "축소",
+        "스케일",
+        "크기",
+        "zoom",
+        "scale",
+        "화면 키우기"
+      ],
+      "related": [
+        "position",
+        "keyframes",
+        "crop"
+      ],
+      "source": "https://www.blackmagicdesign.com/kr/products/davinciresolve/edit",
+      "maps": {
+        "premiere": {
+          "name": "Scale",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "Scale / 크기",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Scale",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "크기 조절",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "position",
+      "title": "화면 위치 이동",
+      "resolve": "Position",
+      "category": "영상 효과",
+      "location": "Edit → Inspector → Video → Transform → Position",
+      "summary": "영상 화면을 위·아래·좌·우로 옮깁니다.",
+      "steps": [
+        "타임라인 클립을 선택합니다.",
+        "Inspector의 Position X/Y를 변경합니다.",
+        "시간에 따른 이동은 키프레임을 추가합니다."
+      ],
+      "tip": "화면을 이동했을 때 비는 부분은 Zoom·크롭 등을 함께 조절할 수 있습니다.",
+      "edition": "무료",
+      "keywords": [
+        "이동",
+        "위치",
+        "가로",
+        "세로",
+        "position"
+      ],
+      "related": [
+        "zoom",
+        "keyframes"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Position",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "위치",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Position",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "위치 조절",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "crop",
+      "title": "영상 가장자리 자르기",
+      "resolve": "Crop",
+      "category": "영상 효과",
+      "location": "Edit → Inspector → Video → Cropping",
+      "summary": "영상의 위·아래·좌·우 가장자리를 가려 화면 구성을 조정합니다.",
+      "steps": [
+        "클립을 선택하고 Inspector를 엽니다.",
+        "Cropping 항목을 펼칩니다.",
+        "Left / Right / Top / Bottom 값을 조절합니다."
+      ],
+      "tip": "Crop은 실제 소스 파일을 삭제하는 작업이 아닙니다.",
+      "edition": "무료",
+      "keywords": [
+        "크롭",
+        "화면 자르기",
+        "여백",
+        "crop"
+      ],
+      "related": [
+        "zoom",
+        "position"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Crop",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "자르기 / 크롭",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Crop",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "자르기",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "rotation",
+      "title": "영상 회전",
+      "resolve": "Rotation Angle",
+      "category": "영상 효과",
+      "location": "Edit → Inspector → Video → Transform → Rotation Angle",
+      "summary": "클립을 원하는 각도로 회전합니다.",
+      "steps": [
+        "클립을 선택합니다.",
+        "Inspector의 Rotation Angle을 조정합니다.",
+        "회전에 따라 빈 공간이 생기면 Zoom도 조절합니다."
+      ],
+      "tip": "회전과 화면 방향 변경은 다른 작업입니다.",
+      "edition": "무료",
+      "keywords": [
+        "회전",
+        "기울이기",
+        "rotation",
+        "angle"
+      ],
+      "related": [
+        "zoom",
+        "vertical-timeline"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Rotation",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "회전",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Rotation",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "회전",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "keyframes",
+      "title": "키프레임 애니메이션",
+      "resolve": "Keyframes",
+      "category": "영상 효과",
+      "location": "Edit → Inspector → 각 속성 옆 다이아몬드",
+      "summary": "시간에 따라 크기·위치·불투명도 등이 바뀌도록 만듭니다.",
+      "steps": [
+        "클립을 선택하고 시작 시점에 재생헤드를 둡니다.",
+        "변경할 속성의 키프레임을 추가합니다.",
+        "다른 시점으로 이동해 속성 값을 변경합니다."
+      ],
+      "tip": "같은 키프레임이어도 속도 그래프와 보간 방식은 프로그램마다 다를 수 있습니다.",
+      "edition": "무료",
+      "keywords": [
+        "애니메이션",
+        "움직임",
+        "키프레임",
+        "keyframe",
+        "모션"
+      ],
+      "related": [
+        "zoom",
+        "position",
+        "retime-curve"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Keyframes",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "키프레임",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Keyframes",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "키프레임",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "opacity",
+      "title": "영상 투명도",
+      "resolve": "Opacity",
+      "category": "영상 효과",
+      "location": "Edit → Inspector → Video → Composite → Opacity",
+      "summary": "상위 트랙 클립의 투명도를 조절해 아래 영상과 합성합니다.",
+      "steps": [
+        "합성할 클립을 위쪽 비디오 트랙에 배치합니다.",
+        "Inspector에서 Composite 항목을 엽니다.",
+        "Opacity를 조절합니다."
+      ],
+      "tip": "투명도 애니메이션에는 키프레임을 사용할 수 있습니다.",
+      "edition": "무료",
+      "keywords": [
+        "투명도",
+        "알파",
+        "opacity",
+        "합성"
+      ],
+      "related": [
+        "pip",
+        "keyframes"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Opacity",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "불투명도",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Opacity",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "투명도",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "pip",
+      "title": "화면 속 화면",
+      "resolve": "Picture in Picture / 상위 트랙",
+      "category": "영상 효과",
+      "location": "Edit → 타임라인 비디오 트랙 + Inspector → Transform",
+      "summary": "메인 영상 위에 다른 영상을 작게 배치합니다.",
+      "steps": [
+        "배경 영상을 V1에 둡니다.",
+        "겹칠 영상을 상위 비디오 트랙에 배치합니다.",
+        "Inspector에서 Zoom과 Position을 조절합니다."
+      ],
+      "tip": "Final Cut Pro는 연결된 클립 구조를 활용하므로 타임라인 구성법이 다릅니다.",
+      "edition": "무료",
+      "keywords": [
+        "화면 안 화면",
+        "오버레이",
+        "overlay",
+        "picture in picture",
+        "pip"
+      ],
+      "related": [
+        "zoom",
+        "position",
+        "opacity"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "상위 트랙 / PIP",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "오버레이 / PIP",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Connected Clip / PIP",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "PIP",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "compound-clip",
+      "title": "클립 묶기",
+      "resolve": "Compound Clip",
+      "category": "기본 편집",
+      "location": "Edit → 클립 선택 → New Compound Clip",
+      "summary": "여러 영상·오디오 클립을 하나처럼 묶어 이동하거나 효과를 적용합니다.",
+      "steps": [
+        "묶을 클립을 여러 개 선택합니다.",
+        "우클릭하여 New Compound Clip을 선택합니다.",
+        "이름을 지정하고 하나의 클립처럼 편집합니다."
+      ],
+      "tip": "프리미어의 Nest, 파이널 컷의 Compound Clip과 활용 목적은 유사하지만 프로젝트 구조는 다릅니다.",
+      "edition": "무료",
+      "keywords": [
+        "네스트",
+        "중첩",
+        "nest",
+        "compound clip",
+        "묶기"
+      ],
+      "related": [
+        "adjustment-clip",
+        "timeline"
+      ],
+      "source": "https://helpx.adobe.com/premiere/desktop/edit-projects/edit-nested-sequences/about-nested-sequences.html",
+      "maps": {
+        "premiere": {
+          "name": "Nest",
+          "status": "대체",
+          "note": "중첩 시퀀스와 유사하지만 재사용·연결 구조가 완전히 동일하지는 않습니다."
+        },
+        "capcut": {
+          "name": "복합 편집",
+          "status": "대체",
+          "note": "캡컷에서 클립 묶기와 작업 목적이 비슷할 수 있습니다."
+        },
+        "final-cut-pro": {
+          "name": "Compound Clip",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "클립 묶기",
+          "status": "대체",
+          "note": "블로의 그룹형 조작과 컴파운드 클립 구조는 다릅니다."
+        }
+      }
+    },
+    {
+      "slug": "adjustment-clip",
+      "title": "여러 클립에 효과 한 번에 적용",
+      "resolve": "Adjustment Clip",
+      "category": "영상 효과",
+      "location": "Edit → Effects → Adjustment Clip",
+      "summary": "상위 트랙에 배치하여 아래쪽 여러 클립에 같은 효과를 적용합니다.",
+      "steps": [
+        "Effects에서 Adjustment Clip을 찾습니다.",
+        "효과를 적용할 클립들 위 비디오 트랙에 놓습니다.",
+        "길이를 조정하고 효과나 색보정을 추가합니다."
+      ],
+      "tip": "Final Cut Pro의 기본 도구에는 동일한 조정 레이어가 없으며 대체 워크플로가 필요할 수 있습니다.",
+      "edition": "무료",
+      "keywords": [
+        "조정 레이어",
+        "레이어",
+        "adjustment layer",
+        "여러 클립 효과"
+      ],
+      "related": [
+        "compound-clip",
+        "color-primary"
+      ],
+      "source": "https://www.blackmagicdesign.com/kr/products/davinciresolve/edit",
+      "maps": {
+        "premiere": {
+          "name": "Adjustment Layer",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "조정 레이어",
+          "status": "차이 있음",
+          "note": "버전별 지원 범위와 처리 방식 확인이 필요합니다."
+        },
+        "final-cut-pro": {
+          "name": "조정 레이어 워크플로",
+          "status": "대체",
+          "note": "타이틀·플러그인 등 다른 접근이 필요할 수 있습니다."
+        },
+        "vllo": {
+          "name": "전체 효과 적용",
+          "status": "대체",
+          "note": "전용 조정 클립과 1:1 대응하지 않습니다."
+        }
+      }
+    },
+    {
+      "slug": "speed",
+      "title": "영상 배속 변경",
+      "resolve": "Change Clip Speed",
+      "category": "기본 편집",
+      "location": "Edit → 클립 우클릭 → Change Clip Speed",
+      "summary": "영상 클립의 재생 속도를 빠르게 또는 느리게 만듭니다.",
+      "steps": [
+        "클립을 선택하고 우클릭합니다.",
+        "Change Clip Speed를 엽니다.",
+        "속도를 설정하고 적용합니다."
+      ],
+      "tip": "속도 변경과 프레임 보간 품질은 별개의 설정입니다.",
+      "edition": "무료",
+      "keywords": [
+        "속도",
+        "배속",
+        "느리게",
+        "빠르게",
+        "슬로모션",
+        "speed"
+      ],
+      "related": [
+        "retime-curve",
+        "freeze-frame"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Speed / Duration",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "속도",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Retime / Speed",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "배속",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "retime-curve",
+      "title": "속도 램핑·속도 커브",
+      "resolve": "Retime Curve",
+      "category": "영상 효과",
+      "location": "Edit → 클립 우클릭 → Retime Curve",
+      "summary": "영상 중간에서 속도가 점점 빨라지거나 느려지도록 조절합니다.",
+      "steps": [
+        "클립에 속도 포인트를 추가합니다.",
+        "Retime Curve를 표시합니다.",
+        "속도 구간과 커브를 조절합니다."
+      ],
+      "tip": "CapCut의 속도 커브 템플릿과 조작 방식은 다르며 수동 조정이 필요합니다.",
+      "edition": "무료",
+      "keywords": [
+        "스피드램프",
+        "velocity",
+        "속도 커브",
+        "retime",
+        "타임 리매핑"
+      ],
+      "related": [
+        "speed",
+        "keyframes"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Time Remapping",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "속도 커브",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Retime Editor",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "배속 구간 조절",
+          "status": "대체",
+          "note": "앱 버전에 따라 그래프 편집 범위가 다릅니다."
+        }
+      }
+    },
+    {
+      "slug": "freeze-frame",
+      "title": "영상 멈춘 화면",
+      "resolve": "Freeze Frame",
+      "category": "영상 효과",
+      "location": "Edit → Retime Controls → Freeze Frame",
+      "summary": "특정 프레임을 정지 화면처럼 고정합니다.",
+      "steps": [
+        "정지시킬 프레임에 재생헤드를 놓습니다.",
+        "클립의 Retime Controls를 엽니다.",
+        "Freeze Frame을 적용합니다."
+      ],
+      "tip": "정지 프레임을 이미지로 출력해서 사용하는 방법도 있습니다.",
+      "edition": "무료",
+      "keywords": [
+        "프리즈",
+        "프리즈프레임",
+        "freeze",
+        "멈춤",
+        "정지"
+      ],
+      "related": [
+        "speed",
+        "retime-curve"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Frame Hold / Freeze Frame",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "정지 화면",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Hold",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "정지 화면",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "stabilization",
+      "title": "흔들리는 영상 안정화",
+      "resolve": "Stabilization",
+      "category": "영상 효과",
+      "location": "Edit → Inspector → Stabilization (또는 Color → Tracker)",
+      "summary": "촬영 중 발생한 영상 흔들림을 분석해 부드럽게 보정합니다.",
+      "steps": [
+        "흔들리는 클립을 선택합니다.",
+        "Inspector의 Stabilization 항목을 엽니다.",
+        "분석을 실행한 후 결과를 확인합니다."
+      ],
+      "tip": "결과가 과도하게 잘리거나 왜곡되면 설정을 완화합니다.",
+      "edition": "무료",
+      "keywords": [
+        "흔들림 제거",
+        "워프 스테빌라이저",
+        "손떨림",
+        "안정화",
+        "stabilize"
+      ],
+      "related": [
+        "crop",
+        "zoom"
+      ],
+      "source": "https://www.blackmagicdesign.com/kr/products/davinciresolve/edit",
+      "maps": {
+        "premiere": {
+          "name": "Warp Stabilizer",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "안정화",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Stabilization",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "흔들림 보정",
+          "status": "유사",
+          "note": ""
+        }
+      }
+    },
+    {
+      "slug": "dynamic-zoom",
+      "title": "간편한 자동 확대 이동",
+      "resolve": "Dynamic Zoom",
+      "category": "영상 효과",
+      "location": "Edit → Inspector → Dynamic Zoom",
+      "summary": "시작·끝 프레임을 이용해 자동으로 확대·축소 움직임을 만듭니다.",
+      "steps": [
+        "클립을 선택하고 Inspector를 엽니다.",
+        "Dynamic Zoom을 켭니다.",
+        "뷰어에서 시작·끝 프레임 크기를 조절합니다."
+      ],
+      "tip": "키프레임 확대와 비슷한 결과를 만들 수 있지만 제어 방식이 다릅니다.",
+      "edition": "무료",
+      "keywords": [
+        "켄번즈",
+        "켄 번즈",
+        "다이나믹 줌",
+        "천천히 확대",
+        "zoom"
+      ],
+      "related": [
+        "zoom",
+        "keyframes"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Scale 키프레임",
+          "status": "대체",
+          "note": "키프레임으로 동일한 종류의 움직임을 만들 수 있습니다."
+        },
+        "capcut": {
+          "name": "키프레임 확대",
+          "status": "대체",
+          "note": ""
+        },
+        "final-cut-pro": {
+          "name": "Ken Burns",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "줌 효과",
+          "status": "대체",
+          "note": ""
+        }
+      }
+    },
+    {
+      "slug": "text",
+      "title": "기본 텍스트·타이틀",
+      "resolve": "Text",
+      "category": "자막·그래픽",
+      "location": "Edit → Effects → Titles → Text",
+      "summary": "영상 위에 일반적인 텍스트 타이틀을 넣습니다.",
+      "steps": [
+        "Effects → Titles에서 Text를 찾습니다.",
+        "상위 비디오 트랙에 배치합니다.",
+        "Inspector에서 글자·크기·위치를 편집합니다."
+      ],
+      "tip": "자막 트랙(Subtitle)과 일반 텍스트 타이틀은 용도가 다릅니다.",
+      "edition": "무료",
+      "keywords": [
+        "제목",
+        "글자",
+        "텍스트",
+        "타이틀",
+        "text",
+        "title"
+      ],
+      "related": [
+        "text-plus",
+        "subtitles"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Text / Graphics",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "텍스트",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Titles",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "글자",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "text-plus",
+      "title": "움직이는 텍스트 효과",
+      "resolve": "Text+ / Fusion Titles",
+      "category": "자막·그래픽",
+      "location": "Edit → Effects → Titles → Text+",
+      "summary": "애니메이션과 세부 스타일이 필요한 타이틀을 만듭니다.",
+      "steps": [
+        "Text+를 타임라인에 배치합니다.",
+        "Inspector에서 텍스트와 스타일을 설정합니다.",
+        "필요하면 Fusion에서 애니메이션을 확장합니다."
+      ],
+      "tip": "CapCut의 준비된 템플릿과 동일한 프리셋은 아니며 효과를 직접 만드는 작업이 늘 수 있습니다.",
+      "edition": "무료",
+      "keywords": [
+        "텍스트 플러스",
+        "모션 그래픽",
+        "mogrt",
+        "타이틀 애니메이션",
+        "퓨전"
+      ],
+      "related": [
+        "text",
+        "keyframes"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Essential Graphics / MOGRT",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "텍스트 애니메이션",
+          "status": "대체",
+          "note": ""
+        },
+        "final-cut-pro": {
+          "name": "Motion Titles",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "움직이는 글자",
+          "status": "대체",
+          "note": ""
+        }
+      }
+    },
+    {
+      "slug": "subtitles",
+      "title": "대사 자막 만들기",
+      "resolve": "Subtitles",
+      "category": "자막·그래픽",
+      "location": "Edit → Subtitle Track",
+      "summary": "영상의 대사를 시간에 맞춰 자막 트랙으로 관리합니다.",
+      "steps": [
+        "타임라인에 Subtitle Track을 추가합니다.",
+        "자막 클립을 생성하고 내용을 입력합니다.",
+        "자막 스타일과 시간을 조절합니다."
+      ],
+      "tip": "화면 장식용 Text와 전달용 Subtitle Track은 목적이 다릅니다.",
+      "edition": "무료",
+      "keywords": [
+        "캡션",
+        "자막",
+        "subtitle",
+        "srt",
+        "영상 자막"
+      ],
+      "related": [
+        "auto-subtitles",
+        "text"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Captions",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "자막",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Captions",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "자막",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "auto-subtitles",
+      "title": "음성 자동 자막",
+      "resolve": "Create Subtitles from Audio",
+      "category": "자막·그래픽",
+      "location": "Timeline → Create Subtitles from Audio (버전별 메뉴 확인)",
+      "summary": "영상의 음성을 분석해 자막 초안을 생성하는 기능입니다.",
+      "steps": [
+        "자막을 만들 타임라인을 엽니다.",
+        "버전별 자동 자막 생성 명령을 실행합니다.",
+        "인식된 텍스트와 타이밍을 직접 검수합니다."
+      ],
+      "tip": "지원 언어·버전·Studio 라이선스 요구 사항을 확인해야 합니다.",
+      "edition": "Studio 확인",
+      "keywords": [
+        "자동 캡션",
+        "자동자막",
+        "음성 인식",
+        "transcription",
+        "subtitle"
+      ],
+      "related": [
+        "subtitles",
+        "text"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Speech to Text",
+          "status": "유사",
+          "note": ""
+        },
+        "capcut": {
+          "name": "자동 캡션",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Transcribe to Captions",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "자동 자막",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "text-stroke",
+      "title": "글자 테두리·그림자",
+      "resolve": "Text+ Shading",
+      "category": "자막·그래픽",
+      "location": "Edit → Text+ → Inspector → Shading",
+      "summary": "자막에 외곽선이나 그림자를 추가해 가독성을 높입니다.",
+      "steps": [
+        "Text+ 타이틀을 추가합니다.",
+        "Inspector → Shading에서 사용할 요소를 선택합니다.",
+        "테두리 또는 그림자 관련 값을 조정합니다."
+      ],
+      "tip": "일반 Text와 Text+의 스타일 설정 위치가 다릅니다.",
+      "edition": "무료",
+      "keywords": [
+        "외곽선",
+        "스트로크",
+        "그림자",
+        "shadow",
+        "outline",
+        "stroke"
+      ],
+      "related": [
+        "text-plus",
+        "text"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Stroke / Shadow",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "스트로크 / 그림자",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Outline / Drop Shadow",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "테두리 / 그림자",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "mask",
+      "title": "일부 영역만 보정하기",
+      "resolve": "Power Window / Mask",
+      "category": "영상 효과",
+      "location": "Color → Window (또는 Fusion 마스크)",
+      "summary": "화면의 특정 부분을 지정해 색보정이나 효과를 적용합니다.",
+      "steps": [
+        "Color 페이지에서 클립을 엽니다.",
+        "Window에서 원형·사각형 등 모양을 만듭니다.",
+        "선택 영역 안팎에 보정을 적용합니다."
+      ],
+      "tip": "Power Window와 편집 앱의 단순 마스크는 작동 맥락이 다를 수 있습니다.",
+      "edition": "무료",
+      "keywords": [
+        "특정 영역",
+        "마스킹",
+        "window",
+        "부분 보정",
+        "mask"
+      ],
+      "related": [
+        "color-primary",
+        "tracking"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Mask",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "마스크",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Shape Mask",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "마스크",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "blur",
+      "title": "화면 일부 흐림·모자이크",
+      "resolve": "Blur / Mosaic Blur",
+      "category": "영상 효과",
+      "location": "Color → Blur / Edit → Effects (효과별 상이)",
+      "summary": "얼굴·정보 등 화면 일부를 흐리게 처리합니다.",
+      "steps": [
+        "효과를 적용할 클립을 선택합니다.",
+        "적절한 Blur 또는 Mosaic Blur 효과를 찾습니다.",
+        "마스크나 Window로 적용 범위를 제한합니다."
+      ],
+      "tip": "효과 종류에 따라 Studio 전용이거나 처리 결과가 다를 수 있습니다.",
+      "edition": "효과별 확인",
+      "keywords": [
+        "모자이크",
+        "블러",
+        "흐림",
+        "가리기",
+        "blur",
+        "pixelate"
+      ],
+      "related": [
+        "mask",
+        "tracking"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Gaussian Blur / Mosaic",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "블러 / 모자이크",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Blur",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "모자이크 / 블러",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "chroma-key",
+      "title": "초록 배경 제거",
+      "resolve": "Delta Keyer / 3D Keyer",
+      "category": "영상 효과",
+      "location": "Fusion → Delta Keyer (또는 Edit → 3D Keyer)",
+      "summary": "그린스크린·블루스크린 배경을 투명하게 만들어 합성합니다.",
+      "steps": [
+        "키잉할 영상 아래에 배경 영상을 배치합니다.",
+        "Fusion의 Delta Keyer 또는 Edit의 3D Keyer를 사용합니다.",
+        "키 컬러와 가장자리를 보정합니다."
+      ],
+      "tip": "자동 인물 배경 제거와 크로마키는 서로 다른 기술입니다.",
+      "edition": "무료",
+      "keywords": [
+        "초록배경",
+        "그린스크린",
+        "크로마키",
+        "keyer",
+        "chroma key"
+      ],
+      "related": [
+        "pip",
+        "mask"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Ultra Key",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "크로마키",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Keyer",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "크로마키",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "color-primary",
+      "title": "기본 색보정",
+      "resolve": "Primaries / Color Page",
+      "category": "색보정",
+      "location": "Color → Primaries",
+      "summary": "노출·대비·채도·화이트밸런스를 종합적으로 조정합니다.",
+      "steps": [
+        "Color 페이지로 이동합니다.",
+        "Primaries의 Color Wheels나 Bars를 엽니다.",
+        "밝기와 색 균형을 맞춘 뒤 필요하면 노드를 추가합니다."
+      ],
+      "tip": "프리미어 Lumetri Color와 유사한 용도지만 컬러 페이지는 노드 기반 워크플로가 중심입니다.",
+      "edition": "무료",
+      "keywords": [
+        "컬러",
+        "색보정",
+        "lumetri",
+        "밝기",
+        "노출",
+        "대비",
+        "채도"
+      ],
+      "related": [
+        "temperature",
+        "lut",
+        "curves"
+      ],
+      "source": "https://www.blackmagicdesign.com/kr/products/davinciresolve/color",
+      "maps": {
+        "premiere": {
+          "name": "Lumetri Color",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "조정 / 색상",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Color Inspector",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "필터 / 보정",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "temperature",
+      "title": "영상 색온도 조절",
+      "resolve": "Temperature / Tint",
+      "category": "색보정",
+      "location": "Color → Primaries → Temperature / Tint",
+      "summary": "화면을 차갑거나 따뜻하게 만들고 색 균형을 조절합니다.",
+      "steps": [
+        "Color 페이지에서 클립을 선택합니다.",
+        "Primaries의 Temperature와 Tint를 찾습니다.",
+        "과도한 색 치우침이 없도록 조정합니다."
+      ],
+      "tip": "입력 색공간과 촬영 포맷에 따라 컨트롤 체감이 다를 수 있습니다.",
+      "edition": "무료",
+      "keywords": [
+        "화이트밸런스",
+        "온도",
+        "색온도",
+        "색조",
+        "tint",
+        "temperature",
+        "wb"
+      ],
+      "related": [
+        "color-primary",
+        "lut"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Temperature / Tint",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "온도 / 색조",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Temperature / Tint",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "색온도",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "curves",
+      "title": "색상 곡선 조절",
+      "resolve": "Custom Curves",
+      "category": "색보정",
+      "location": "Color → Curves",
+      "summary": "커브 곡선을 이용해 명암과 특정 톤 영역을 세밀하게 조절합니다.",
+      "steps": [
+        "Color 페이지에서 Curves를 엽니다.",
+        "곡선에 제어점을 추가합니다.",
+        "명암 또는 채널별 변화를 조절합니다."
+      ],
+      "tip": "캡컷의 간단한 Curves보다 조절 범위와 작업 흐름이 넓습니다.",
+      "edition": "무료",
+      "keywords": [
+        "곡선",
+        "커브",
+        "curves",
+        "색상 곡선"
+      ],
+      "related": [
+        "color-primary",
+        "temperature"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "RGB Curves",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "커브",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Color Curves",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "곡선형 색보정",
+          "status": "대체",
+          "note": "버전에 따라 직접 커브 제어가 제한될 수 있습니다."
+        }
+      }
+    },
+    {
+      "slug": "lut",
+      "title": "LUT·색감 프리셋 적용",
+      "resolve": "LUT",
+      "category": "색보정",
+      "location": "Color → LUTs",
+      "summary": "LUT를 사용해 색상 값을 특정 룩 또는 변환에 맞춰 바꿉니다.",
+      "steps": [
+        "Color 페이지에서 LUT 브라우저를 엽니다.",
+        "원하는 LUT를 클립 또는 노드에 적용합니다.",
+        "강도와 색공간을 확인합니다."
+      ],
+      "tip": "필터 프리셋과 LUT는 정확히 같은 개념이 아닙니다.",
+      "edition": "무료",
+      "keywords": [
+        "필터",
+        "색감",
+        "룩",
+        "lut",
+        "프리셋",
+        "look"
+      ],
+      "related": [
+        "color-primary",
+        "curves"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Lumetri Look / LUT",
+          "status": "유사",
+          "note": ""
+        },
+        "capcut": {
+          "name": "필터 / LUT",
+          "status": "차이 있음",
+          "note": "필터는 여러 효과가 결합될 수 있어 LUT와 동일하지 않습니다."
+        },
+        "final-cut-pro": {
+          "name": "Effects / LUT",
+          "status": "유사",
+          "note": ""
+        },
+        "vllo": {
+          "name": "필터",
+          "status": "차이 있음",
+          "note": "앱 필터와 LUT는 동일한 형식이 아닙니다."
+        }
+      }
+    },
+    {
+      "slug": "tracking",
+      "title": "움직이는 영역 추적",
+      "resolve": "Tracker",
+      "category": "색보정",
+      "location": "Color → Tracker",
+      "summary": "움직이는 얼굴이나 물체를 따라 Window 영역을 이동시킵니다.",
+      "steps": [
+        "Color 페이지에서 Window로 영역을 지정합니다.",
+        "Tracker를 열고 앞뒤로 추적합니다.",
+        "움직임을 확인하고 필요한 구간을 보정합니다."
+      ],
+      "tip": "기존 앱의 자동 추적과 비교할 때 수동 보정이 필요할 수 있습니다.",
+      "edition": "무료",
+      "keywords": [
+        "트래킹",
+        "추적",
+        "track",
+        "tracker",
+        "얼굴 따라가기"
+      ],
+      "related": [
+        "mask",
+        "blur"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Mask Tracking",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "모션 추적",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Object Tracker",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "움직임 따라가기",
+          "status": "대체",
+          "note": "앱별 전용 추적 지원 범위가 다릅니다."
+        }
+      }
+    },
+    {
+      "slug": "detach-audio",
+      "title": "영상과 오디오 분리",
+      "resolve": "Unlink Clips / Link Clips 해제",
+      "category": "오디오",
+      "location": "Edit → 클립 우클릭 → Link Clips 해제",
+      "summary": "연결된 영상과 오디오를 독립적으로 선택·이동할 수 있습니다.",
+      "steps": [
+        "타임라인에서 연결된 영상·오디오를 선택합니다.",
+        "Link Clips를 해제합니다.",
+        "오디오만 선택해 수정하거나 이동합니다."
+      ],
+      "tip": "원본에서 오디오 파일을 추출해 저장하는 것과 타임라인의 연결을 해제하는 것은 다릅니다.",
+      "edition": "무료",
+      "keywords": [
+        "오디오 추출",
+        "오디오 분리",
+        "unlink",
+        "detach",
+        "비디오 소리"
+      ],
+      "related": [
+        "volume",
+        "normalize-audio"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Unlink",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "오디오 분리",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Detach Audio",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "오디오 추출",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "volume",
+      "title": "음량 조절",
+      "resolve": "Volume",
+      "category": "오디오",
+      "location": "Edit → Inspector → Audio → Volume",
+      "summary": "타임라인에서 클립의 볼륨을 올리거나 내립니다.",
+      "steps": [
+        "오디오 클립을 선택합니다.",
+        "Inspector의 Audio 탭을 엽니다.",
+        "Volume을 조절합니다."
+      ],
+      "tip": "단순 볼륨 증가만으로 대사의 음량 편차가 해결되지는 않을 수 있습니다.",
+      "edition": "무료",
+      "keywords": [
+        "소리",
+        "음량",
+        "볼륨",
+        "gain",
+        "volume",
+        "오디오 크게"
+      ],
+      "related": [
+        "normalize-audio",
+        "compressor"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Volume",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "볼륨",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Volume",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "볼륨",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "normalize-audio",
+      "title": "오디오 음량 정규화",
+      "resolve": "Normalize Audio Levels",
+      "category": "오디오",
+      "location": "Edit → 오디오 클립 우클릭 → Normalize Audio Levels",
+      "summary": "클립 오디오 레벨을 지정한 기준에 맞게 조절합니다.",
+      "steps": [
+        "오디오 클립을 선택합니다.",
+        "Normalize Audio Levels를 실행합니다.",
+        "기준을 선택하고 대사·음악 밸런스를 확인합니다."
+      ],
+      "tip": "정규화는 컴프레서와 달리 소리의 순간적인 크기 차이를 계속 압축하지 않습니다.",
+      "edition": "무료",
+      "keywords": [
+        "노말라이즈",
+        "normalize",
+        "음량 맞추기",
+        "LUFS",
+        "오디오 자동 조절"
+      ],
+      "related": [
+        "compressor",
+        "volume"
+      ],
+      "source": "https://www.blackmagicdesign.com/products/davinciresolve/fairlight",
+      "maps": {
+        "premiere": {
+          "name": "Audio Gain / Normalize",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "음량 자동 조절",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Loudness / Normalize",
+          "status": "유사",
+          "note": ""
+        },
+        "vllo": {
+          "name": "볼륨 조절",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "audio-eq",
+      "title": "음성 EQ 조절",
+      "resolve": "Equalizer (EQ)",
+      "category": "오디오",
+      "location": "Fairlight → Mixer → EQ",
+      "summary": "저음·중음·고음 대역을 조절해 음성을 다듬습니다.",
+      "steps": [
+        "Fairlight 페이지로 이동합니다.",
+        "Mixer에서 해당 오디오 트랙의 EQ를 엽니다.",
+        "주파수 대역을 듣고 필요한 만큼 조정합니다."
+      ],
+      "tip": "EQ는 음량 정규화와 목적이 다릅니다.",
+      "edition": "무료",
+      "keywords": [
+        "이퀄라이저",
+        "이큐",
+        "주파수",
+        "EQ",
+        "목소리 보정"
+      ],
+      "related": [
+        "compressor",
+        "normalize-audio"
+      ],
+      "source": "https://www.blackmagicdesign.com/products/davinciresolve/fairlight",
+      "maps": {
+        "premiere": {
+          "name": "Parametric Equalizer",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "EQ",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Channel EQ",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "음질 보정",
+          "status": "대체",
+          "note": "세부 주파수 제어 범위가 다를 수 있습니다."
+        }
+      }
+    },
+    {
+      "slug": "compressor",
+      "title": "목소리 크기 차이 줄이기",
+      "resolve": "Compressor / Dynamics",
+      "category": "오디오",
+      "location": "Fairlight → Mixer → Dynamics → Compressor",
+      "summary": "큰 소리는 줄이고 작은 소리와의 차이를 완화하는 오디오 다이내믹 도구입니다.",
+      "steps": [
+        "Fairlight 페이지에서 해당 트랙을 선택합니다.",
+        "Mixer의 Dynamics를 엽니다.",
+        "Compressor를 켜고 Threshold·Ratio 등을 조절합니다."
+      ],
+      "tip": "컴프레서는 정규화와 다르게 시간에 따른 음량 변화를 제어합니다.",
+      "edition": "무료",
+      "keywords": [
+        "컴프레서",
+        "다이내믹",
+        "소리 일정하게",
+        "compression",
+        "목소리"
+      ],
+      "related": [
+        "normalize-audio",
+        "audio-eq"
+      ],
+      "source": "https://www.blackmagicdesign.com/products/davinciresolve/fairlight",
+      "maps": {
+        "premiere": {
+          "name": "Dynamics / Compressor",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "오디오 보정",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Compressor",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "음량 보정",
+          "status": "대체",
+          "note": ""
+        }
+      }
+    },
+    {
+      "slug": "audio-fade",
+      "title": "소리 서서히 시작·종료",
+      "resolve": "Audio Fade",
+      "category": "오디오",
+      "location": "Edit / Fairlight → 오디오 클립 페이드 핸들",
+      "summary": "음악이나 목소리가 자연스럽게 들리거나 사라지게 만듭니다.",
+      "steps": [
+        "오디오 클립을 타임라인에 배치합니다.",
+        "클립 시작 또는 끝의 페이드 핸들을 드래그합니다.",
+        "재생해 전환이 자연스러운지 확인합니다."
+      ],
+      "tip": "볼륨 키프레임으로도 페이드를 만들 수 있습니다.",
+      "edition": "무료",
+      "keywords": [
+        "페이드인",
+        "페이드아웃",
+        "fade in",
+        "fade out",
+        "음악 작아지기"
+      ],
+      "related": [
+        "volume",
+        "normalize-audio"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Constant Power / Audio Fade",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "페이드 인/아웃",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Audio Fade",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "페이드",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "vertical-timeline",
+      "title": "세로 영상·숏폼 만들기",
+      "resolve": "Vertical Timeline / Timeline Resolution",
+      "category": "내보내기",
+      "location": "Project Settings → Master Settings → Timeline Resolution",
+      "summary": "9:16 같은 세로 비율의 타임라인으로 릴스·쇼츠를 제작합니다.",
+      "steps": [
+        "프로젝트 설정에서 타임라인 해상도를 설정합니다.",
+        "세로 비율(예: 1080×1920)을 지정합니다.",
+        "영상의 화면 위치와 크기를 다시 맞춥니다."
+      ],
+      "tip": "타임라인 해상도와 최종 Deliver 출력 설정을 모두 확인합니다.",
+      "edition": "무료",
+      "keywords": [
+        "쇼츠",
+        "릴스",
+        "틱톡",
+        "세로",
+        "9:16",
+        "비율",
+        "shorts"
+      ],
+      "related": [
+        "export",
+        "zoom"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Sequence Settings",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "비율 / 9:16",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Project Properties",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "화면 비율",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "export",
+      "title": "영상 내보내기",
+      "resolve": "Deliver / Quick Export",
+      "category": "내보내기",
+      "location": "Deliver 또는 File → Quick Export",
+      "summary": "편집한 타임라인을 MP4 등 영상 파일로 렌더링합니다.",
+      "steps": [
+        "Deliver 페이지를 엽니다.",
+        "포맷·코덱·해상도와 파일 위치를 지정합니다.",
+        "렌더 큐에 추가하고 Render All을 실행합니다."
+      ],
+      "tip": "Quick Export는 빠르지만 세밀한 설정은 Deliver 페이지에서 확인하는 편이 좋습니다.",
+      "edition": "무료",
+      "keywords": [
+        "출력",
+        "익스포트",
+        "저장",
+        "렌더",
+        "render",
+        "mp4",
+        "export"
+      ],
+      "related": [
+        "vertical-timeline",
+        "timeline"
+      ],
+      "source": "https://www.blackmagicdesign.com/kr/products/davinciresolve/edit",
+      "maps": {
+        "premiere": {
+          "name": "Export / Media Encoder",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "내보내기",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Share / Export",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "추출",
+          "status": "유사"
+        }
+      }
+    },
+    {
+      "slug": "proxy",
+      "title": "편집용 가벼운 파일 만들기",
+      "resolve": "Proxy Media",
+      "category": "기본 편집",
+      "location": "Media Pool → 클립 우클릭 → Generate Proxy Media",
+      "summary": "고해상도 원본 대신 가벼운 프록시 파일로 부드럽게 편집합니다.",
+      "steps": [
+        "Media Pool에서 원본 클립을 선택합니다.",
+        "Generate Proxy Media를 실행합니다.",
+        "프록시 연결 상태를 확인하고 편집합니다."
+      ],
+      "tip": "프록시 파일과 최종 출력에 사용하는 원본 파일을 구분하세요.",
+      "edition": "무료",
+      "keywords": [
+        "프록시",
+        "proxy",
+        "버벅임",
+        "느린 재생",
+        "편집 최적화"
+      ],
+      "related": [
+        "media-pool",
+        "export"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Create Proxies",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "프록시 / 캐시",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Create Proxy Media",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "저화질 미리보기",
+          "status": "대체",
+          "note": "모바일 앱의 미리보기 최적화와 별개일 수 있습니다."
+        }
+      }
+    },
+    {
+      "slug": "markers",
+      "title": "편집 지점 표시하기",
+      "resolve": "Markers",
+      "category": "기본 편집",
+      "location": "Edit → Timeline / Marker",
+      "summary": "편집 타이밍이나 수정할 지점을 표시해 둡니다.",
+      "steps": [
+        "타임라인에서 표시할 위치로 이동합니다.",
+        "Marker를 추가합니다.",
+        "마커 이름이나 메모를 입력해 관리합니다."
+      ],
+      "tip": "클립 마커와 타임라인 마커는 적용 대상이 다릅니다.",
+      "edition": "무료",
+      "keywords": [
+        "마커",
+        "표시",
+        "marker",
+        "메모",
+        "구간"
+      ],
+      "related": [
+        "timeline",
+        "blade"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Marker",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "표시 / 마커",
+          "status": "유사"
+        },
+        "final-cut-pro": {
+          "name": "Markers",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "북마크 / 표시",
+          "status": "대체",
+          "note": ""
+        }
+      }
+    },
+    {
+      "slug": "multicam",
+      "title": "여러 카메라 영상 편집",
+      "resolve": "Multicam Clip",
+      "category": "기본 편집",
+      "location": "Media Pool → Create New Multicam Clip",
+      "summary": "여러 대의 카메라 영상을 동기화해 각 앵글을 전환하며 편집합니다.",
+      "steps": [
+        "여러 카메라 클립을 Media Pool로 가져옵니다.",
+        "클립들을 선택해 멀티캠 클립을 생성합니다.",
+        "타임라인에서 Multicam Viewer로 앵글을 전환합니다."
+      ],
+      "tip": "카메라의 타임코드와 오디오 품질에 따라 동기화 정확도가 달라질 수 있습니다.",
+      "edition": "무료",
+      "keywords": [
+        "멀티캠",
+        "멀티 카메라",
+        "multicam",
+        "카메라 전환"
+      ],
+      "related": [
+        "timeline",
+        "media-pool"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Multi-Camera Source Sequence",
+          "status": "유사"
+        },
+        "capcut": {
+          "name": "멀티캠 편집",
+          "status": "차이 있음",
+          "note": "일반 캡컷 타임라인의 멀티 영상과 전용 멀티캠은 다릅니다."
+        },
+        "final-cut-pro": {
+          "name": "Multicam Clip",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "여러 영상 레이어",
+          "status": "대체",
+          "note": ""
+        }
+      }
+    },
+    {
+      "slug": "magic-mask",
+      "title": "인물·사물 자동 마스킹",
+      "resolve": "Magic Mask",
+      "category": "영상 효과",
+      "location": "Color → Magic Mask (Studio)",
+      "summary": "인물이나 물체를 지정해 움직임을 따라 마스크를 생성합니다.",
+      "steps": [
+        "Studio에서 Color 페이지를 엽니다.",
+        "Magic Mask에서 대상 영역을 지정합니다.",
+        "추적 후 마스크 경계를 점검합니다."
+      ],
+      "tip": "Studio 기능이며, 버전별 인터페이스와 결과가 달라질 수 있습니다.",
+      "edition": "Studio",
+      "keywords": [
+        "자동 누끼",
+        "배경 제거",
+        "매직마스크",
+        "인물",
+        "magic mask",
+        "컷아웃"
+      ],
+      "related": [
+        "mask",
+        "tracking"
+      ],
+      "source": "",
+      "maps": {
+        "premiere": {
+          "name": "Rotobrush / Mask",
+          "status": "대체",
+          "note": "자동 선택의 원리와 사용 방식이 다릅니다."
+        },
+        "capcut": {
+          "name": "자동 배경 제거",
+          "status": "대체",
+          "note": ""
+        },
+        "final-cut-pro": {
+          "name": "Object Tracker / Magnetic Mask",
+          "status": "유사"
+        },
+        "vllo": {
+          "name": "배경 제거",
+          "status": "대체",
+          "note": ""
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+/* Supplied application icons — display remains deliberately minimal. */
+.brand-app-icon{display:block;flex:0 0 auto;width:36px;height:36px;object-fit:contain}
+.footer-app-icon{display:block;flex:0 0 auto;width:57px;height:57px;object-fit:contain}
+.card-app-icon{position:absolute;top:19px;right:18px;width:76px;height:76px;object-fit:contain;filter:drop-shadow(0 2px 1px rgba(30,25,15,.045));pointer-events:none}
+.program-card-top .card-title{margin-top:auto;position:relative;z-index:1;max-width:100%;padding-right:0}
+.program-card-top .card-small{max-width:calc(100% - 82px);line-height:1.5}
+.stamp-logo-pair{position:absolute;right:22px;top:48px;display:flex;align-items:center;gap:9px}
+.stamp-logo-pair img{width:53px;height:53px;display:block;object-fit:contain}
+.stamp-logo-pair span{font-size:24px;line-height:1;color:rgba(25,23,20,.72)}
+.map-app-icon{width:29px;height:29px;object-fit:contain;flex-shrink:0}
+@media(max-width:1100px){
+ .card-app-icon{width:65px;height:65px;right:15px;top:18px}
+ .program-card-top .card-small{max-width:calc(100% - 65px)}
+ .stamp-logo-pair{right:13px;gap:5px}
+ .stamp-logo-pair img{width:42px;height:42px}
+}
+@media(max-width:860px){
+ .card-app-icon{width:70px;height:70px;right:16px;top:17px}
+ .program-card-top .card-small{max-width:calc(100% - 73px)}
+ .stamp-logo-pair{top:52px}
+ .stamp-logo-pair img{width:38px;height:38px}
+ .stamp-logo-pair span{font-size:18px}
+}
+@media(max-width:620px){
+ .brand-app-icon{width:31px;height:31px}
+ .footer-app-icon{width:49px;height:49px}
+ .program-card-top{height:151px}
+ .card-app-icon{width:55px;height:55px;top:17px;right:12px}
+ .program-card-top .card-small{max-width:calc(100% - 51px)}
+ .program-card-top .card-title{font-size:clamp(22px,5.1vw,28px);line-height:1.11;margin-top:auto}
+ .stamp-logo-pair{top:14px;right:13px;gap:5px}
+ .stamp-logo-pair img{width:34px;height:34px}
+ .stamp-logo-pair span{font-size:16px}
+ .program-hero-stamp>span:first-child{font-size:9px;letter-spacing:.045em}
+ .program-hero-stamp b{font-size:22px;max-width:100%;line-height:1.15;align-self:end}
+ .map-app-icon{width:24px;height:24px}
+ .map-program{gap:9px}
+}
+@media(max-width:350px){
+ .card-app-icon{width:46px;height:46px;top:16px;right:9px}
+ .program-card-top .card-small{max-width:calc(100% - 45px)}
+ .program-card-top .card-title{font-size:20px}
+ .stamp-logo-pair img{width:30px;height:30px}
+}

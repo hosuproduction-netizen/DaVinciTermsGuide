@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="container inside-page">
+    <div class="breadcrumb"><a href="{{root}}index.html">홈</a><span>/</span><a href="{{root}}index.html#choose">프로그램별 가이드</a><span>/</span><strong>{{program.name}}</strong></div>
+    <section class="program-hero">
+      <div class="program-hero-copy"><p class="eyebrow">SOFTWARE SWITCH / {{ '%02d'|format(program.index) }} OF 04</p><h1>{{program.name}}에서<br><span>다빈치로.</span></h1><p>기존 프로그램의 용어를 다빈치 리졸브 기능에 연결했습니다.<br>기능 이름과 위치, 차이점을 바로 확인하세요.</p></div>
+      <div class="program-hero-stamp card-{{program.color}}"><span>YOU'RE COMING FROM</span><div class="stamp-logo-pair" aria-hidden="true"><img src="{{root}}assets/icons/{{program.slug}}.webp" alt="" width="53" height="53"><span>→</span><img src="{{root}}assets/icons/davinci.webp" alt="" width="53" height="53"></div><b>{{program.name}}</b><small>DAVINCI RESOLVE 21.1</small></div>
+    </section>
+    <div class="toolbar-section">
+      <div class="toolbar-intro"><div><p class="eyebrow">FEATURE MAPPING / {{ '%02d'|format(feature_count) }} ENTRIES</p><h2>기능 비교표</h2></div><label class="program-switch-label" for="program-switch">다른 프로그램으로 변경 <span aria-hidden="true">↗</span><select id="program-switch" data-program-switch><option value="">프로그램 선택</option>{% for p in programs %}<option value="{{root}}programs/{{p.slug}}/" {{ 'selected' if p.slug==program.slug else '' }}>{{p.name}}</option>{% endfor %}</select></label></div>
+      <div class="list-tools"><label class="list-search"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.8" cy="10.8" r="7"/><path d="m16 16 5 5"/></svg><input type="search" data-list-search autocomplete="off" placeholder="{{program.name}} 기능명·일상적인 표현으로 검색" aria-label="{{program.name}} 기능 검색"></label><div class="filter-chips" data-filters aria-label="카테고리 선택"><button type="button" class="is-active" data-cat="전체" aria-pressed="true">전체</button>{% for cat in categories %}<button type="button" data-cat="{{cat}}" aria-pressed="false">{{cat}}</button>{% endfor %}</div></div>
+    </div>
+    <div class="results-meta"><span aria-live="polite"><strong data-result-count>{{feature_count}}</strong>개의 기능</span><span class="results-hint">항목을 누르면 사용법과 차이점을 볼 수 있습니다.</span></div>
+    <section class="compare-list" data-list-area aria-label="{{program.name}}과 다빈치 기능 비교">
+      <div class="compare-head"><span>기존 프로그램 · {{program.name}}</span><span>다빈치 리졸브</span><span>대응 방식</span><span aria-hidden="true"></span></div>
+      {% for feat in features %}
+      {% set m = feat.maps[program.slug] %}
+      <a class="compare-row" href="{{root}}features/{{feat.slug}}/?from={{program.slug}}" data-row data-category="{{feat.category}}" data-search="{{(feat.title ~ ' ' ~ feat.resolve ~ ' ' ~ feat.summary ~ ' ' ~ m.name ~ ' ' ~ (feat.keywords|join(' ')))|lower}}" aria-label="{{m.name}} - {{feat.resolve}} 사용법 보기">
+        <span class="compare-source"><strong>{{m.name}}</strong><small>{{feat.category}}</small></span><span class="compare-target"><b>{{feat.resolve}}</b><small>{{feat.title}}</small></span><span class="compare-badge"><i class="badge badge-{{'difference' if m.status=='차이 있음' else 'alternative' if m.status=='대체' else 'similar'}}">{{m.status}}</i></span><span class="compare-arrow" aria-hidden="true">↗</span>
+      </a>
+      {% endfor %}
+      <div class="empty-state" data-empty hidden><strong>검색 결과가 없습니다.</strong><p>다른 단어로 검색하거나 카테고리를 '전체'로 바꿔보세요.</p><button type="button" data-clear-filters>필터 초기화 ↗</button></div>
+    </section>
+    <div class="guide-footnote"><span>✳</span><p><strong>비교 방식 안내</strong> · <b>유사</b>는 주된 용도가 비슷한 기능, <b>대체</b>는 다른 방법으로 비슷한 결과를 얻는 기능, <b>차이 있음</b>은 구조나 지원 범위가 다른 기능을 뜻합니다. 앱 버전 및 운영체제에 따라 용어가 다를 수 있습니다.</p></div>
+  </div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="container inside-page">
+    <div class="breadcrumb"><a href="{{root}}index.html">홈</a><span>/</span><strong>다빈치 기능 사전</strong></div>
+    <section class="dictionary-hero"><p class="eyebrow">THE DAVINCI DICTIONARY / {{ '%02d'|format(feature_count) }} ENTRIES</p><h1>다빈치 기능,<br><span>이름부터 찾아보세요.</span></h1><p>어디에 있는지 모르겠는 기능, 익숙한 단어로 검색하세요.<br>한글·영문 기능명과 자주 쓰는 표현을 함께 찾을 수 있습니다.</p><span class="dictionary-hero-symbol" aria-hidden="true">✳</span></section>
+    <div class="toolbar-section dictionary-toolbar"><div class="list-tools"><label class="list-search"><svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.8" cy="10.8" r="7"/><path d="m16 16 5 5"/></svg><input type="search" data-list-search autocomplete="off" placeholder="예: 확대, Scale, 자막, 목소리 일정하게" aria-label="다빈치 기능 사전 검색"></label><div class="filter-chips" data-filters><button type="button" class="is-active" data-cat="전체" aria-pressed="true">전체</button>{% for cat in categories %}<button type="button" data-cat="{{cat}}" aria-pressed="false">{{cat}}</button>{% endfor %}</div></div></div>
+    <div class="results-meta"><span aria-live="polite"><strong data-result-count>{{feature_count}}</strong>개의 기능</span><span class="results-hint">모든 기능에 고유한 설명 페이지가 있습니다.</span></div>
+    <section class="compare-list dictionary-list" data-list-area aria-label="다빈치 기능 목록"><div class="compare-head"><span>찾는 기능</span><span>다빈치 기능 이름</span><span>페이지</span><span aria-hidden="true"></span></div>
+      {% for feat in features %}
+      <a class="compare-row" href="{{root}}features/{{feat.slug}}/" data-row data-category="{{feat.category}}" data-search="{{(feat.title ~ ' ' ~ feat.resolve ~ ' ' ~ feat.summary ~ ' ' ~ (feat.keywords|join(' ')) ~ ' ' ~ (feat.maps.values()|map(attribute='name')|join(' ')))|lower}}"><span class="compare-source"><strong>{{feat.title}}</strong><small>{{feat.category}}</small></span><span class="compare-target"><b>{{feat.resolve}}</b><small>{{feat.location}}</small></span><span class="compare-badge"><i class="badge badge-edition">{{feat.edition}}</i></span><span class="compare-arrow" aria-hidden="true">↗</span></a>
+      {% endfor %}
+      <div class="empty-state" data-empty hidden><strong>검색 결과가 없습니다.</strong><p>다른 단어로 검색하거나 카테고리를 '전체'로 바꿔보세요.</p><button type="button" data-clear-filters>필터 초기화 ↗</button></div>
+    </section>
+  </div>
+{% endblock %}
