@@ -112,3 +112,23 @@
     if (switcher.value) window.location.href = usableHref(switcher.value);
   });
 })();
+
+// 기존에 생성된 개별 기능 페이지의 장식용 영문 라벨을 한국어로 표시합니다.
+// 새로 빌드한 HTML은 templates/feature.html에서 이미 한국어로 생성됩니다.
+const koreanPageLabels = {
+  'WHERE TO FIND IT': '다빈치에서 찾는 위치',
+  'REFERENCE': '공식 자료',
+  'QUICK REFERENCE': '기능 한눈에 보기',
+  'KEEP EXPLORING': '관련 기능',
+  'DAVINCI RESOLVE 21.1': '다빈치 리졸브 21.1'
+};
+if (document.body.classList.contains('is-feature')) {
+  document.querySelectorAll('.feature-path-caption,.official-source>span,.aside-panel>.eyebrow,.related-section .eyebrow,.feature-hero>.eyebrow,.feature-hero > div > .eyebrow').forEach(el => {
+    const val = el.textContent.trim();
+    if (koreanPageLabels[val]) el.textContent = koreanPageLabels[val];
+    else if (val.includes('DAVINCI RESOLVE 21.1')) el.textContent = val.replace('DAVINCI RESOLVE 21.1', '다빈치 리졸브 21.1');
+  });
+  document.querySelectorAll('.quick-box b').forEach(el => {
+    if (el.textContent.trim() === 'DaVinci Resolve 21.1') el.textContent = '다빈치 리졸브 21.1';
+  });
+}
