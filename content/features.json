@@ -4,28 +4,28 @@
       "slug": "premiere",
       "name": "Premiere Pro",
       "description": "익숙한 트랙 편집에서 더 넓은 색보정으로.",
-      "kicker": "ADOBE WORKFLOW",
+      "kicker": "트랙 편집",
       "color": "lilac"
     },
     {
       "slug": "capcut",
       "name": "CapCut",
       "description": "숏폼 편집의 감각을 그대로, 더 세밀하게.",
-      "kicker": "SHORT-FORM WORKFLOW",
+      "kicker": "숏폼 편집",
       "color": "lemon"
     },
     {
       "slug": "final-cut-pro",
       "name": "Final Cut Pro",
       "description": "마그네틱 타임라인에서 새로운 편집 흐름으로.",
-      "kicker": "MAC WORKFLOW",
+      "kicker": "맥 편집",
       "color": "mint"
     },
     {
       "slug": "vllo",
       "name": "VLLO",
       "description": "손안의 편집에서 데스크톱 편집으로.",
-      "kicker": "MOBILE WORKFLOW",
+      "kicker": "모바일 편집",
       "color": "taupe"
     }
   ],
